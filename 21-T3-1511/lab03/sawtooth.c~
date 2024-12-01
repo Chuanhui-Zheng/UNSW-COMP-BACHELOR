@@ -1,0 +1,24 @@
+//Blair z5351042
+#include<stdio.h>
+int main(void){
+    int h,l;
+    printf("Please enter the height of the sawtooth: ");
+    scanf("%d", &h);
+    printf("Please enter the length of the sawtooth: ");
+    scanf("%d", &l);
+    int x = 0;
+    int y = 0;
+    while (y < h){
+        while (x < l){
+            if (x % y == 0 || x % h == y){
+                printf("*");
+            }
+            else{
+                printf(" ");
+            }x+=1;
+            
+        }x = 0;
+        printf("\n");
+        y+=1;
+    }
+}

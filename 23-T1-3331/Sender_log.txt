@@ -1,0 +1,26 @@
+snd  0.000175 	SYN    51782 0
+rcv  0.000314 	ACK    51783 0
+snd  2.002427 	DATA   51783 1000
+snd  2.002476 	DATA   52783 1000
+snd  2.002487 	DATA   53783 1000
+snd  2.002496 	DATA   54783 1000
+rcv  2.002673 	ACK    55783 0
+snd  4.005336 	DATA   51783 1000
+snd  4.072143 	DATA   51783 1000
+rcv  4.072236 	ACK    52783 0
+snd  4.138919 	DATA   55783 38
+snd  4.138937 	DATA   52783 1000
+rcv  4.138996 	ACK    53783 0
+snd  4.205713 	DATA   53783 1000
+rcv  4.205810 	ACK    54783 0
+snd  6.142228 	DATA   55783 38
+snd  6.209029 	DATA   55783 38
+rcv  6.209122 	ACK    55821 0
+snd  6.275818 	FIN    55822 0
+snd  8.277878 	FIN    55822 0
+rcv  8.278113 	ACK    55823 0
+
+Amount of (original) Data Transferred (in bytes) (excluding retransmissions):4038
+Number of Data Segments Sent (excluding retransmissions): 5
+Number of Retransmitted Data Segments: 6
+Number of Duplicate Acknowledgements received : 0

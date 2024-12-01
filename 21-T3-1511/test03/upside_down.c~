@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(void)
+{
+    char cha1, cha2, cha3;
+    printf("Please enter three characters: ");
+    scanf("%c %c %c", &cha1, &cha2, &cha3);
+    if (cha1 < cha2){
+        if (cha2 < cha3){
+            printf("up\n");
+            return 0;
+        }
+    }
+    if (cha1 > cha2){
+        if (cha2 > cha3){
+            printf("down\n");
+            return 0;
+        }
+    }
+    printf("neither\n");
+    return 0;
+}

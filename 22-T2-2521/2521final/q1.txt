@@ -1,0 +1,35 @@
+Question 1
+
+(a) How many key comparisons will be performed while searching for the 
+    key 60 in the tree?
+    7 times.Every time we compare the key, we do a == comparison first, if it is less than the key, it goes to the left subtree, otherwise it goes to the right subtree, therefore, we do most two comparison each time, so it is 2+2+1 = 7.
+
+
+(b) What is the minimum possible number of key comparisons that would be
+    required in a successful search in the tree?
+    1 time.When we hit the key on the first try, i.e., the key is 42.
+
+
+    List all the search keys that would cause this.
+    key:42
+
+
+(c) What is the maximum possible number of key comparisons that would be
+    required in a successful search in the tree?
+    11 times.The worst outcome is that we reach the leaf node of the tree, which experiences the highest number of comparisons.
+
+
+    List all the search keys that would cause this.
+    key:33
+    key:51
+
+
+(d) What is the minimum possible number of key comparisons that would be
+    required in an unsuccessful search in the tree?
+    8 times.When we reach the leaf nodes which are the least level of the tree and still have not hit the result, i.e. the worst case, in this level.
+    such as : find 17:42--20--9--16--not found. 
+
+
+    Give two different search key(s) that would cause this.
+    key:17
+    key:18

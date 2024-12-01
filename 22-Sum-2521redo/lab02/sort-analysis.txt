@@ -1,0 +1,33 @@
+Input      Initial    Number     AvgTime            AvgTime
+Size       Order      of Runs    for sortIntList    for sort
+10000      random     5          0.16sec              0.00sec
+10000      sorted     5          0.00sec              0.00sec
+10000      reverse    5          0.00sec              0.00sec
+20000      random     5          1.22sec              0.00sec
+20000      sorted     5          0.00sec              0.00sec
+20000      reverse    5          0.00sec              0.00sec
+50000      random     5          10.09sec             0.02sec
+50000      sorted     5          0.00sec              0.00sec
+50000      reverse    5          0.00sec              0.00sec
+
+add rows for larger input sizes
+1000000    sorted     5          0.27sec              0.33sec
+1000000    reverse    5          0.27sec              0.34sec
+2000000    sorted     5          0.52sec              0.75sec
+2000000    reverse    5          0.52sec              0.76sec
+5000000    sorted     5          1.47sec              2.03sec
+5000000    reverse    5          1.47sec              2.10sec
+
+Explanation of timing results:0
+In conclusion of the results when the numbers are sorted randomly, sortIntList
+and sort program sorting used more time than sorted and reverse. The initial numeric order is different, so it cost different time.
+
+When the order is random, the sortIntList program will through the original
+list and creat a new sorted copy of the list. The program will compare the number 
+and move it in correct position.
+
+When the order is sorted and reverse, the program will insert the number
+at the head of list or at the tail. This can reduce the time since that the program.
+Since the program not need to through the list.
+
+When the initial numeric order is random, it cost more time than the order is sorted or reverse.

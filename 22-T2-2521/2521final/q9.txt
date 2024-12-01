@@ -1,0 +1,32 @@
+Question 9
+
+(a) What are the final contents of the hash table after the given values
+    have been inserted into an initially empty table in the order given. 
+
+
+[0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]  [12]
+26   13    2    0   ___   31   32   20   18   ___  ___   ___   ___  
+
+    How many keys are examined in searching for the key value 45 in the 
+    resulting table?
+    Since 45 mod 13 = 6, we reach index 6, then the first time we go to check 32, we find no hits, the second time we check 20, the third time we check 18, end.
+    Therefore, three key : 32, 20, 18.
+
+
+(b) What are the final contents of the hash table after the given values
+    have been inserted into an initially empty table in the order given. 
+
+
+[0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]  [12]
+26    13   2   ___  ___   31   32   0    20   18   ___   ___   ___ 
+
+    How many keys are examined in searching for the key value 6 in the 
+    resulting table?
+
+    Since 6 mod 13 = 6,we check index 6, which is key 32,fail.
+    Then hash2(6) = 6 - 7 % 6 = 5,
+    (hash1(6) + hash2(6)) % 13 = (6 + 5) % 13 = 11,we go to index 11, because index 11 is null, so to be end.
+    Therefore, one key : 32.
+
+
+

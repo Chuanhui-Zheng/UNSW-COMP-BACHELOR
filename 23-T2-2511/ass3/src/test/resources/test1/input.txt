@@ -1,0 +1,11 @@
+create topic t1 int
+create partition t1 p1
+create consumer group g1 t1 Range
+create consumer g1 c1
+create producer p1 int manual
+produce event p1 t1 message1.json p1
+show topic t1
+consume event c1 p1
+show consumer group g1
+show topic t1
+q

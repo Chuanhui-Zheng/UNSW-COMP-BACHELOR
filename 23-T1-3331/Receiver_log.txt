@@ -1,0 +1,28 @@
+rcv  6.385216 	SYN    51782 0
+snd  6.385286 	ACK    51783 0
+drp  8.387695 	DATA   51783 0
+drp  8.387729 	DATA   52783 0
+drp  8.387735 	DATA   53783 0
+rcv  8.387743 	DATA   54783 1000
+snd  8.387779 	ACK    55783 0
+drp  10.390570 	DATA   51783 0
+rcv  10.457296 	DATA   51783 1000
+snd  10.457340 	ACK    52783 0
+drp  10.524079 	DATA   55783 0
+rcv  10.524091 	DATA   52783 1000
+snd  10.524108 	ACK    53783 0
+rcv  10.590879 	DATA   53783 1000
+snd  10.590911 	ACK    54783 0
+rcv  12.527452 	DATA   55783 38
+drp  12.527488 	ACK    55821 0
+rcv  12.594180 	DATA   55783 38
+snd  12.594218 	ACK    55821 0
+drp  12.660980 	FIN    55822 0
+rcv  14.663099 	FIN    55822 0
+snd  14.663143 	ACK    55823 0
+
+Amount of (original) Data Received (in bytes) : 4038
+Number of (original) Data Segments Received : 6
+Number of duplicate  Data segments received (if any) : 0 
+Number of Data segments dropped : 5 
+Number of ACK segments dropped : 1

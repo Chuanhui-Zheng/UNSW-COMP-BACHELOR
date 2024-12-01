@@ -1,0 +1,22 @@
+//Blair z5351042
+#include<stdio.h>
+int main(void){
+    int a;
+    printf("Enter size: ");
+    scanf("%d", &a);
+    int x = 0;
+    int y = 0;
+    while (y < a){
+        while (x < a){
+            if (x == y || x == (a-y-1)){
+                printf("*");
+            }
+            else{
+                printf("-");
+            }
+            x += 1; 
+        }x = 0;
+    printf("\n");
+    y += 1;
+    }
+}

@@ -1,0 +1,29 @@
+//Blair z5351042
+#include<stdio.h>
+int main(void){
+    int num_of_station[10001];
+    int charge = 0;
+    int units = 0;
+    
+    int i = 0;
+    int times = 0;
+    while (scanf("%d", &num_of_station[i]) != EOF)){
+        i+=1;
+    }
+    while (units < i - 1){
+        if (charge < i-units-1){
+            charge += num_of_station[units];
+            if (num_of_station[units]!=0){
+                times+=1;
+            }
+        }
+        units+=1;
+        charge-=1;
+        if (charge < 0){
+            times = 0;
+            break;
+        }
+    }
+    printf("%d\n", times);
+    return 0;
+}

@@ -1,0 +1,122 @@
+
+========================================================================
+                          Complexity Analysis
+========================================================================
+
+NOTE:
+- Your time complexities should be in big-O notation.
+- For operations that involve only one set, your time complexities should
+  be in terms of n, where n is the number of elements in the set.
+- For operations that involve two sets, your time complexities should be in
+  terms of n and m, where n and m are the number of elements in each of the
+  sets respectively.
+
+
+--------
+SetUnion
+--------
+
+Worst case complexity: n+m
+
+Explanation: I go through both s1 and s2, then use created insert function to put all elements
+from s1 and s2 to a new set. The insert function will automatically check if any elements from 
+s1 is already in s2. Therefore there is no worries about the sets s1 and s2 have the same elements
+and put this element into new set twice.
+
+O It should go through both Sets s1 and s2, so time complexities should be n+m.
+
+
+---------------
+SetIntersection
+---------------
+
+Worst case complexity: n*m
+
+Explanation: Inorder to find the intersection, I have to go through s1 and find the elements
+already in s2, but no returns like go through s2 to find elements in s1. I use contain function
+to check for boolean of whether they both have this element. If yes, then insert this element
+to the new created set.
+
+O It go through n times(how many elements are in s1) in s2. n*m.
+
+-------------
+SetDifference
+-------------
+
+Worst case complexity: (N+M)*(N+M)
+
+Explanation: This is in an 'A-B' format which means I have to find the elements in s1 that is 
+not contained in s2 plus elements in s2 that is not contained in s1. But this is too complex. 
+I use function union and intersection to create two new sets. And check for the difference only
+from these two new sets.
+
+O It go through the union of set1 and set2 times to the intersection. (N∩M)*(NuM)
+
+
+---------
+SetEquals
+---------
+
+Worst case complexity: n*m
+
+Explanation: An easy way to check if they are equal is to first check if the size of them are
+equal then go through and see if all elements from set1 are in set2. So to make sure that they
+have same size and one have same elements in the other.
+
+O It got through n times to set2. So n*m
+
+
+---------
+SetSubset
+---------
+
+Worst case complexity: n*m
+
+Explanation: Its same as above because I declear the function 's1ins2func' in Setequal to make
+that easier. So this is to check if all elements in s1 are in s2. We use a contain function 
+and go through elements from s1 to check if they are in s2.
+
+O n*m
+
+
+--------
+SetFloor
+--------
+
+Worst case complexity: n
+
+Explanation: Set a global value 'store' to store the process of what can be put in the result.
+Go through the set and find for numbers smaller than the given item. And if this number is 
+bigger than what we've decleared and intiated as 0 'store', put the number in 'store'. Therefore
+after going through the set, we have the biggest number in set that is smaller than given item.
+
+O Only goes through the set once. n
+
+
+----------
+SetCeiling
+----------
+
+Worst case complexity: n
+
+Explanation: Same as above it goes through the set and get the smallest number that is bigger
+than the given number.
+
+O Only goes through the set once. n
+
+========================================================================
+               Design Documentation for Cursor Operations
+========================================================================
+
+If you completed the cursor operations, you must explain the design and
+implementation of your solution here.
+
+
+
+
+
+
+
+
+
+

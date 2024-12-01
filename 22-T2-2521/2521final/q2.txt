@@ -1,0 +1,22 @@
+Question 2
+
+(a) What value(s) would be stored in the root node of the 2-3-4 tree
+    after the insertion of the value 28?
+    28 is less than 29 and greater than 23, we insert it into the leaf node 23 29 32, because this leaf node had space for four values, we push 28 to 21 37 55, again, this node had space for four values, push 28 as the new root node.
+    So the root node only stores value 28.
+
+
+    What value(s) would be stored in the node that now contains 28?
+    the new root node, stores value 28 only.
+
+
+(b) What value(s) would be stored in the root node of the 2-3-4 tree 
+    after the insertion of the value 50?
+    50 is less than 53 and greater than 49, we insert it into the leaf node 46 49 53, because this leaf node had space for four values, we push 49 to the root node 21 37 55, again, this root node had space for four values, push 37 as the new root node.
+    So, the root node store value 37.
+
+    What value(s) would be stored in the node that now contains 50?
+
+    values are 50, 53.
+
+
